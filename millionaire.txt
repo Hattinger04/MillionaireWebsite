@@ -1,0 +1,235 @@
+#Difficulty	Question	Correct Answer	Answer #2	Answer #3	Answer #4	Background information
+0	Who was the first President of the United States?	George Washington	Abraham Lincoln	William J. Clinton	Thomas Jefferson	
+0	Which is not a color of the United States flag?	Black	Red	White	Blue
+0	"A ""ten-speed"" belongs to what category of vehicle?"	Bicycle	Automobile	Roller skates	Go-cart	
+0	"Complete this phrase:  ""April ________ bring May flowers?"	Showers	Sunshine	Fools	Springtime	
+0	What tool is usually used to tighten a nut?	Wrench	Block Plane	Hammer	Flashlight	
+0	What control on a radio adjusts the loudness?	Volume	Tuner	Bass	Treble	
+0	A lumberjack would most likely use which of these items on the job?	Axe	Jack Hammer	Level	Pallet Jack	
+0	How many days are there in a leap year?	366	364	365	367	
+0	What is the name of the green frog on The Muppet Show?	Kermit	Frogger	Yoda	Fozie	
+0	"What famous bear lives in the ""Hundred Acre Woods""?"	Pooh Bear	Boo Boo Bear	Mama Bear	Smokey the Bear	
+0	How many wheels does a unicycle have?	One	Two	Three	Four	
+0	"Complete the phrase:  ""Do not judge a ________ by its cover"""	Book	Man	Court	Store	
+0	How many inches are in a yard?	36 inches	48 inches	24 inches	60 inches	
+0	Who was the President of the United States from 1993-2001?	William Clinton	Ronald Reagan	Jimmy Carter	Gerald Ford	
+0	Which is not a clothing brand?	Coppertone	Guess	Ralph Lauren	Levi Strauss	
+0	Who's portrait is on the U.S. quarter?	George Washington	Thomas Jefferson	Andrew Jackson	Benjamin Franklin
+0	What is the name of the official residence of the President of the United States?	White House	Green House	Presidential House	U.S. House
+0	The unofficial symbol of the U.S. Democratic Party is what animal?	Donkey	Elephant	Giraffe	Lion
+0	"Due to superstition, what floor number is absent from many tall buildings?"	13	66	7	1
+0	"What are Go Fish, Solitaire and War?"	Card games	Old TV game shows	Insults	Rock bands
+0	What category of plant produces apples?	Tree	Bush	Fern	Vine
+0	Which of the following is a timepiece?	Watch	Wall switch	Automobile	Chair
+0	"In baseball, what is the name of the position behind home plate?"	Catcher	Pitcher	Coach	Shortstop
+0	What item is typically dropped overboard to prevent a boat from drifting?	Anchor	Rudder	Mainstay	Raft
+0	How many disciples did Jesus specifically select?	12	7	16	10
+0	"To indicate a loading/unloading zone, a curb is usually painted what color?"	Yellow	Red	Green	Blue
+0	What type of reference book would be used to find definitions for words?	Dictionary	Thesaurus	Encyclopedia	Almanac
+0	"In what state would you find Walt Disney World's ""Epcot"" theme park?"	Florida	California	New Mexico	Maryland
+0	An old saying:  A ________ in time saves nine	Stitch	Shot	Snippet	Stroll
+0	"Where are you most likely to encounter the abbreviations ""FTP"", ""HTTP"" and ""ISP""?"	On the Internet	In the military	At church	In a factory
+0	"When a person has a ""senior moment"", it usually means he/she"	Lost their train of thought	Noticed their gray hair	Feels proud of themselves	Has trouble standing up
+0	Who's portrait is on the U.S. dime?	Dwight D. Eisenhower	Thomas Jefferson	George Washington	John F. Kennedy
+0	"Complete this phrase:  ""A penny saved is a penny ________?"	Earned	More	Saved	Kept
+0	Oranges are a good source of what vitamin?	Vitamin C	Vitamin A	Vitamin B	Vitamin D
+0	Which of the following is used as a pointing device on a computer?	Mouse	Keyboard	Scanner	Modem
+0	Which of the following is not one of Santa's twelve reindeer?	Biscuit	Dasher	Comet	Donner
+0	What color is the background of a STOP sign?	Red	Yellow	White	Fushia
+0	Where did Superman grow up as a child?	Smallville	Pleasantville	Metropolis	Thomasville
+0	Which of the following animals has the longest neck when full grown?	Giraffe	Elephant	Horse	Turtle
+0	What is typically used to remove pencil marks?	Eraser	White-out	Hydrochloric acid	Paint
+1	Which of the following sports does NOT involve hitting an object with a stick?	Curling	Baseball	Polo	Hockey
+1	Where was the 2001 baseball All-Star Game held?	Seattle	Houston	Boston	Los Angeles
+1	What color is Superman's cape?	Red	Blue	Yellow	White
+1	"During World War II, on which of these cities did the U.S. drop an atomic bomb?"	Hiroshima	Okinawa	Tokyo	Godzilla
+1	What is another name for a 'shooting star'?	Meteor	Comet	Moon	Aurora Borealis
+1	"In the movie 'Jurassic Park', what type of dinosaur chased the children in the kitchen?"	Velociraptor	Stegosaurus	Toydarian	Brontosaurus
+1	How many cups are there in a quart?	4	2	8	16
+1	An albino typically has what distinguishing characteristic?	Very pale skin	Yellow Eyes	Hairless	Obese
+1	What is the largest state of the United States?	Alaska	Texas	Maine	Montana
+1	Genealogy is the study of what subject?	Ancestry	Genetics	Fish	Books
+1	"In Roman numerals, ""L"" is equal to what number?"	50	1000	100	500
+1	"In Roman numerals, ""D"" is equal to what number?"	500	100	1000	50
+1	Who fought Darth Vader with a light saber in the original Star Wars movie?	Obi Wan Kenobi	General Tarkin	Luke Skywalker	Han Solo
+1	"Who's portrait is on the new U.S. ""Golden Dollar"" coin?"	Sacagawea	Susan B. Anthony	Dwight D. Eisenhower	Pocahantas
+1	Abraham Lincoln said:  Four score and __________ years ago today?	Seven	Five	Eleven	Eight
+1	"In Roman numerals, ""C"" is equal to what number?"	100	1000	"1,000,000"	10
+1	"In Roman numerals, ""XIV"" is equal to what number?"	14	16	55	19
+1	"In bowling, what is the term for knocking down all remaining pins with the second ball?"	Spare	Strike	Split	Ace
+1	"The fictional character ""Sherlock Holmes"" had what profession?"	Detective	Spy	Policeman	Reporter
+1	How many points is a touchdown worth in American football?	6 points	7 points	5 points	2 points
+1	"If you had a heart murmur, what specialist would you see?"	Cardiologist	Ophthalmologist	Podiatrist	Neurologist
+1	What part of a tree contains the most chlorophyll?	Leaves	Trunk	Roots	Branches
+1	Which of these plants are grown from bulbs?	Tulips	Petunias	Lettuce	Tomatoes
+1	In which inning does the baseball custom of the fans standing and stretching occur?	7th	5th	6th	8th
+1	Who is the current Vice President of the United States?	Dick Cheney	Al Gore	Bob Dole	William Rehnquist
+1	"The chemical compound ""CO"" is better known as?"	Carbon Monoxide	Ozone	Oxygen	Coal
+1	"Who created the ""Peanuts"" comic strip?"	Charles Schultz	Gary Larson	Bill Watterson	Bil Keane
+1	Prunes are made from what fruit?	Plums	Nectarines	Figs	Dates
+1	Mascara is used on what part of the body?	Eyelashes	Eyebrows	Eyelid	Lips
+1	Peter Parker is the secret identity for what comic book super hero?	Spiderman	Green Lantern	The Flash	Daredevil
+1	What is Batman's secret identity?	Bruce Wayne	David Banner	Dick Grayson	Scott Summers
+1	What is the most populous country in the world?	China	Russia	United States	India
+1	Laundry bleach is used to:	Lighten/whiten colors	Darken colors	Soften fabrics	Reduce static cling
+1	"In the Bible, from what country did Moses lead his people out from slavery?"	Egypt	Babylon	Persia	Edom
+1	How many strings are on a basic guitar?	6	4	5	8
+1	"Who is the author of the ""Harry Potter"" series of books?"	J. K. Rowling	J. R. R. Tolkien	J. A. Jance	Jack Higgins
+1	How many pounds in a ton?	"2,000"	"1,000"	"5,000"	"2,200"
+1	How many yards are in a mile?	"1,760"	"5,280"	"3,382"	"1,440"
+1	"What letter note is one (1) octave higher than a ""C""?"	C	D	C#	B
+1	How many days are there in the month of August?	31	30	28	29
+1	Where is the 2008 Summer Olympics scheduled to be held?	"Bejing, China"	"Tokyo, Japan"	"Brighton, England"	Nepal
+1	"According to superstition, how many years of bad luck will breaking a mirror get you?"	7 years	9 years	3 years	13 years
+1	What system of printing and writing consisting of raised dots was created for the blind?	Braille	Sign Language	Rupee	Proofreading
+1	What is the largest planet of our Solar System?	Jupiter	Saturn	Neptune	Earth
+1	Which of the following electronic components is used to generate sound?	Speaker	Diode	Microphone	Resistor
+1	What color is made when yellow and blue paint are combined?	Green	Orange	Red	Purple
+1	"The ""port"" side of a boat is which side?"	Left	Right	Front	Back
+1	What group forms the base of the USDA Food Guide Pyramid?	"Bread, Cereal, Rice & Pasta"	Vegetable	Fruit	"Meat, Poultry, Fish, Dry Beans, Eggs & Nuts"
+1	Who did Jay Leno replace as the host of the Tonight Show?	Johnny Carson	Ed McMann	Steve Allen	Jack Paar
+1	"Who is the radio personality known for the phrase ""Now, you have the rest of the story""?"	Paul Harvey	Garrison Keillor	Casey Kasem	Dave Ross
+1	How many red and white stripes are there on the U.S. Flag?	13	10	15	12
+1	"A ""Class B"" fire extinguisher is made to put out what type of fire?"	Flammable liquids	Wood and paper	Electrical	Corrosive chemicals
+1	A canine is another name for what type of animal?	Dog	Cat	Lizard	Bird
+1	"What kind of ship was the ""RMS Titanic""?"	Passenger liner	Freighter	Oil tanker	Destroyer
+1	"In the game of chess, what piece can only move diagonally?"	Bishop	Pawn	Rook/Castle	Knight
+1	"In the song, ""The Twelve Days Of Christmas,"" what did ""my true love"" give on the 3rd day?"	French hens	Turtle doves	Calling birds	Geese a-laying	
+1	What is Great Britain's national currency (system of money)?	Pound	Dollar	Mark	Euro	
+1	What is the capital city of Afghanistan?	Kabul	Jalalabad	Kandahar	Bagram	
+1	"What is the name of the angel in the 1946 movie, ""It's a Wonderful Life""?"	Clarence	Witherspoon	Ernie	Henry	
+1	What is the name of Batman's butler?	Alfred	Jones	Albert	James	
+2	What became the first U.S. National Park (in 1872)?	Yellowstone	Yosemite	Everglades	Grand Canyon	
+2	In what city was the original Monopoly board game based?	Atlantic City	New Orleans	Miami	New York	
+2	What popular fitness guru is the creator of Tae-Bo?	Billy Blanks	Chuck Norris	Richard Simmons	Karl Malone	
+2	A camisole is a type of	Lingerie	Flower	Vegetable	Doctor	
+2	Who is the current Chief Executive Officer (CEO) of Microsoft?	Steve Ballmer	Paul Allen	Steve Jobs	Rick Belluzzo	
+2	Which dog breed is the fastest?	Greyhound	St. Bernard	Great Dane	Golden Retriever	
+2	Catnip is most similar to what herb?	Mint	Oregano	Parsley	Pepper	
+2	Which of the following is not a woodwind instrument?	Coronet	Flute	Saxophone	Oboe	
+2	Which of the following is not one of the primary colors of light?	Yellow	Red	Blue	Green	
+2	The lowest point of land in the United States is in what state?	California	Kansas	Alaska	Illinois	#The floor of Death Valley National Park in California is 282 ft *below* sea level.
+2	The highest mountain of the 50 states of the United States is in what state?	Alaska	Oregon	Colorado	California	"#The tallest mountain in the 50 U.S. states is Mount McKinley, Alaska.  The tallest in the lower 48 states is Mount Whitney, California."
+2	What is the longest river in the world?	Nile	Mississippi	Columbia	Amazon	
+2	The 1996 summer Olympic Games was held in what country?	United States	Japan	France	South Korea	
+2	The 1998 winter Olympic Games was held in what country?	Japan	United States	Canada	Austria	
+2	Who's portrait is on the U.S. $50 bill?	Ulysses S. Grant	Abraham Lincoln	Benjamin Franklin	Andrew Jackson	
+2	Who's portrait is on the U.S. $100 bill?	Benjamin Franklin	Abraham Lincoln	Alexander Hamilton	George Washington	
+2	Napoleon I was the ruler of which country?	France	Italy	England	Spain	
+2	Approximately how many kilometers are in a mile?	1.16	32.2	0.862	1.8	
+2	"What type of math would you use to solve ""x + 3 = 7""?"	Algebra	Arithmetic	Geometry	Calculus	
+2	"What type of math would you use to solve ""1 + 3 =""?"	Arithmetic	Algebra	Geometry	Partial Differential Equations	
+2	Sir Isaac Newton was credited with which of the following law?	Gravity	Relativity	Entropy	Morality	
+2	Which is not a percussion instrument?	Piano	Xylophone	Snare drum	Cymbals	"#Though the piano has ""hammers"" which strike the string, it is considered a stringed instrument."
+2	A barrette is used on what part of the body?	Hair	Eyebrows	Fingernails	Mouth	
+2	Natural pearls are made by what shellfish?	Oyster	Clam	Mussels	Crab	
+2	What is the world's fastest land animal?	Cheetah	Greyhound	Gazelle	Ostrich	
+2	"The brand name drink ""V8"" primarily contains what fruit/vegetable?"	Tomato	Carrot	Strawberries	Banana	
+2	What state was the center of the vote recount controversy in the 2000 Presidential election?	Florida	New York	California	Idaho	
+2	"What was the official winning prize for the last remaining survivor of the first ""Survivor"" show?"	$ 1 Million	$ 5 Million	$ 500 Thousand	$ 2 Million	
+2	"Who is the host of the U.S. version of ""Jeopardy""?"	Alex Trebek	Anne Robinson	Pat Sajak	Regis Philbin	
+2	"The clock tower containing ""Big Ben"" is located in what city?"	London	New York	Chicago	Amsterdam	
+2	Who was the first paying American tourist to the International Space Station?	Dennis Tito	Bill Gates	Warren Buffet	Joseph Ellison	
+2	Who is the current First Lady of the United States?	Laura Bush	Barbara Bush	Jenna Bush	Lorraine Bush	"#Barbara and Jenna Bush are President & Laura Bush's twin daughters.  Barbara was named after her grandmother, the former first lady, Barbara Bush."
+2	"Who invented the ""Model T"" automobile?"	Henry Ford	William Randolph Hearst	George Kelly	Walter P. Chrysler	
+2	"On what date did the Japanese bomb Pearl Harbor, Hawaii?"	"December 7th, 1941"	"December 9th, 1941"	"December 15th, 1941"	"December 1st, 1941"	
+2	Late author Samuel Langhorne Clements is better known by what pseudonym?	Mark Twain	Tom Sawyer	Edgar Allan Poe	Lewis Carroll	
+2	Which of the following countries was not an Axis power in WWII	Russia	Germany	Italy	Japan	
+2	Who was the first woman to make a solo flight across the Atlantic?	Amelia Earhart	Jean Grey	Sharon McAuliffe	Bessie Coleman	
+2	What is the chemical symbol for gold?	Au	Ag	Gd	Cu	
+2	"Who wrote the song, ""Star-Spangled Banner""?"	Francis Scott Key	George Gershwin	Irving Berlin	John Philip Sousa	
+2	Jim Davis is the creator of what comic strip?	Garfield	Ziggy	B.C.	Far Side	
+2	The International Dateline runs primarily through which ocean?	Pacific	Atlantic	Indian	Antarctic	
+2	"The Prime Meridian, the basis for 0 degree longitude, is defined to pass through what place?"	Royal Observatory Greenwich	Tower of London	Eiffel Tower	Stevens Tower	#The Prime Meridian is used as the standard time reference called Greenwich Mean Time (GMT).
+2	"Traditionally, what is put in a ""hope chest""?"	Household goods	Memories	Books	Money	
+2	What is the name for a deep trench that is used for fortification and is usually filled with water?	Moat	Stockade	Parapet	Barbican	
+2	Manicures are done on what part of the body?	Hands	Feet	Back	Face	
+2	Which of the following is not a Romantic language?	German	French	Italian	Spanish	
+2	What radioactive gas is sometimes tested for when purchasing a home?	Radon	Carbon Dioxide	Hydrogen	Krypton	
+2	What is the current *federal* minimum wage?	$5.15 	$5.75 	$4.85 	$6.35 	#Washington STATE's minimum wage is currently $6.90.
+2	"The French word ""rouge"" is what color in English?"	Red	Black	Green	Blue	
+2	What process does milk typically undergo to increase its shelf life?	Pasteurization	Preservation	Aging	Irradiation	
+2	"In baseball, a ""one / two"" pitch means that the batter currently has what?"	One ball and two strikes	One strike and two balls	1 foul ball and 2 strikes	Swung on only 1 out of 2 pitches	
+2	What organization is best known for placing Bibles in motels and hotels?	Gideon International	Salvation Army	International Bible Society	Bible Study Fellowship	
+2	"The chemical, saccharin, is commonly used as a __________?"	Sweetener	Glue	Food coloring	Drug	
+2	What is Gumby's best friend's name (i.e. the 4-legged one)?	Pokey	Horsey	Goo	Prickle	
+2	"What is the award presented at the annual ""Academy Awards"" for film?"	Oscar	Emmy	Tony	Grammy	
+2	"What does the Republican abbreviation ""GOP"" currently stand for?"	Grand Old Party	Grand Old Public	GO Party	Get Out and Push	
+2	What government agency is the principle investigative arm of the US Department of Justice?	FBI	CIA	FAA	INS	
+2	What is the motto of the U.S. Marine Corp?	Semper fidelis	Carpe diem	Magnum opus	Mea culpa	
+2	What abbreviated title would most likely follow the name of a dentist?	D.D.S.	M.D.	D.V.M.	D.S.O.	
+2	What fraction of both houses must pass a bill in order to override a presidential veto?	Two-thirds	Majority	Three-quarters	Eight-tenths
+2	Deer meat is also known as what?	Venison	Mincemeat	Beefalo	Grouse
+2	What is the length of a long-distance marathon (approximate)?	26 miles	100 miles	25 miles	13 miles
+2	In what state is Mount Rushmore National Monument located?	South Dakota	North Dakota	Idaho	Montana
+2	Which of the following four hands would be the winning poker hand?	Full house	Three of a kind	Straight	Flush
+2	"Who is the head of the ""Office of Homeland Security""?"	Tom Ridge	Alan Greenspan	Gale Norton	Rod Paige
+2	"In the 1939 movie, ""The Wizard of Oz,"" who played Dorothy?"	Judy Garland	Rosemary Murphy	Lauren Hutton	Ingrid Bergman
+2	Zero degrees latitude is common known as the�	Equator	North Pole	South Pole	International dateline
+3	"Besides Washington D.C., what other city served as the capital of the United States?"	Philadelphia	New York	Boston	Baltimore
+3	Approximately how many liters are in a U.S. liquid gallon?	3.79	3.1415	2.2	6.022
+3	The speed of light is approximately how fast?	"186,000 miles per sec"	"5,500 miles per sec"	"1,670 miles per sec"	"512,000 miles per sec"
+3	Which of the following countries is not in South America?	Madagascar	Peru	Brazil	Bolivia
+3	Which of the following countries is not in Western Europe?	Turkey	Finland	Portugal	Italy
+3	Which of the following is not one of William Shakespeare's works?	Odyssey	Romeo & Juliet	Henry VIII	Macbeth
+3	Modern black pencil lead is primarily made of which substance?	Graphite	Lead	Charcoal	Tar
+3	"The ""Leaning Tower of Pisa"" is located in what country?"	Italy	Spain	Portugal	Sweden
+3	Who is the current U.S. Secretary of State?	Colin Powell	Drew Pickering	Donald Rumsfeld	William O'Day
+3	Who is the current U.S. Attorney General?	John Ashcroft	Laurence Fishburne	Clarence Thomas	Frederic Richardson
+3	The tiger is native to what continent?	Asia	Africa	America	Australia
+3	What was Al Capone convicted of?	Tax Evasion	Bootlegging	Drug running	Accessory to murder
+3	"Who was the author of the classic novel, ""Little Women""?"	Louisa May Alcott	Jane Austen	Charlotte Bronte	Emily Dickinson
+3	"What is the surname of Anastasia, the daughter of the last Russian Czar?"	Romanov	Stalin	Cussack	Dmitrii
+3	"What is a ""depilatory cream"" used for?"	Hair removal	Moisturizing	Adding color	Pain relief
+3	"Beijing, China, is (historically) know by what name?"	Peking	Nanking	Kirin	Shanghai
+3	What is the metal mouthpiece of a horse's bridle called?	Bit	Stirrup	Horn	Girth
+3	"On a standard baseball field, what is the distance between 1st and 2nd base?"	90 feet	78.5 feet	120 feet	60 feet
+3	An electrocardiograph is an instrument used to measure what?	Heart activity	Respiration	Blood pressure	Brain activity
+3	How many bones are in the cervical vertebrae?	7	5	8	12
+3	A person who comes aboard a ship to steer it in or out of a port is called a what?	Pilot	Porter	Conductor	Driver
+3	A catamaran is a type of what?	Boat	Fish	Bird	Aircraft
+3	"In Daniel Defoe's novel, ""Robinson Crusoe,"" what name did Crusoe give his friend?"	Friday	Bantu	Michael	Friend
+3	"In photography, a film's ISO/ASA number indicates what?"	Film speed	Maximum exposure level	Developing process	Color temperature
+3	Upon what island does the Statue of Liberty stand?	Liberty Island	Ellis Island	Staten Island	Coney Island
+3	"In golf, what is the term for a score of ""one under par"" on a hole?"	Birdie	Bogey	Mulligan	Eagle
+3	Which of the following military officers has the higher rank (U.S. Army)?	Colonel	Captain	Major	Lieutenant Colonel
+3	Which of the following military officers has the higher rank (U.S. Navy)?	Captain	Commander	Lieutenant Commander	Lieutenant
+3	What is the name of the Russian space station launched in 1986?	Mir	Itar	Borsche	Freedom
+3	Who is the author of the original Sherlock Holmes stories?	Sir Arthur Conan Doyle	Edgar Rice Burroughs	Rudyard Kipling	Jack London
+3	President John F. Kennedy was assassinated in what Texas city?	Dallas	Houston	Austin	Waco
+3	Cooking food slowly in a small amount of liquid in a tightly covered pan is called what?	Braise	Stew	Saute	Mull
+3	"What airplane is currently flown by the Navy's ""Blue Angels""?"	F/A-18 Hornet	F-22 Raptor	F-15E Strike Eagle	F-16 Fighting Falcon
+3	"Who directed the 1998 movie, ""Saving Private Ryan?"""	Steven Spielberg	James Cameron	Ron Howard	Tom Hanks
+3	Who composed the music for the Nutcracker Ballet?	Tchaikovsky	Shostakovich	Brahms	Schubert
+3	"Who composed the operas ""Don Giovanni?"" and ""Nozze Di Figaro"" (The Marriage of Figaro)?"	Mozart	Handel	Beethoven	Scarlatti
+3	What is the capital city of Canada?	Ottawa	Quebec	Toronto	Montreal
+3	What country is the disputed region known as the Golan Heights in?	Israel	Iraq	Kuwait	Egypt
+3	What was the name of the U.S. Space Shuttle that exploded in 1986?	Challenger	Discovery	Enterprise	Atlantis
+3	Which of the following is not a hair style?	Chub	Pompadour	Mohawk	Flattop
+3	"What is the literary term meaning ""a prose or poetic story that illustrates a moral?"""	Fable	Ballad	Epic	Analogy
+3	"What type of law protects works of authorship, whether published or unpublished?"	Copyright	Patent	Trademark	Passport
+3	Who would be the successor to the presidency after the President and Vice President?	Speaker of the House	Secretary of State	President Pro Tempore (Senate)	Attorney General
+3	"A girl acquires a ""trousseau"" at what stage of life?"	Engagement	Sixteenth birthday	First baby	Wedding
+3	At what country was the USS Cole docked when it was attacked by terrorists?	Yemen	Egypt	Qatar	Oman
+3	Who is the current Prime Minister of Great Britain?	Tony Blair	John Major	Margaret Thatcher	James Callaghan
+3	The mouth of the Mississippi is located in what state?	Louisiana	Mississippi	Texas	Alabama
+3	"Who painted the ""Mona Lisa?"""	da Vinci	Monet	Raphael	Michelangelo
+3	Which of the following is considered a semiprecious gemstone?	Topaz	Diamond	Ruby	Sapphire
+3	"Who signature was the largest signature on the ""Declaration of Independence"" of the U.S.?"	John Hancock	Benjamin Franklin	Thomas Jefferson	Samuel Adams
+3	"Which of the following artist's subject was primarily ""life on the western plains?"""	Frederic Remington	Norman Rockwell	Edward Hopper	Andy Warhol
+4	"The hormone, epinephrine, is more commonly know by what name?"	Adrenaline	Prolactin	Insulin	Pheromones
+4	"Istanbul, Turkey, was formerly known as what city?"	Constantinople	Ankara	Ishmir	Nineveh
+4	"In sewing, using long, loose stitches to hold material in place is called"	Basting	Fixing	Linking	Backing
+4	The official residence of the Vice President of the United States is located on what site?	US Naval Observatory	Fort McNair	National Arboretum	Mount Vernon
+4	"What late cartoonist is associated with ""making complex mechanisms to do a simple task""?"	Rube Goldberg	Gary Trudeau	Walt Kelly	Bill Watterson
+4	Approximately how much does one gallon of water weigh at room temperature?	8.3 lbs	9.7 lbs	6.3 lbs	5.5 lbs
+4	Who is the first American to win the Tour de France three times in a row?	Lance Armstrong	Jan Ullrich	Christopher Jenner	Tyler Hamilton
+4	"What was the first name of Kentucky Fried Chicken's founder, Colonel Sanders?"	Harland	Roger	Alfred	Richmond
+4	"Who was the author of the ""Wizard of Oz"" books?"	L. Frank Baum	Lewis Carroll	Kenneth Grahame	Washington Irving
+4	"What latitude defines the northern border of Idaho, Montana and North Dakota?"	48th Parallel	47th Parallel	50th Parallel	49th Parallel
+4	Approximately how long does it take for light from the Sun to reach Earth?	8 minutes	5 minutes	3 minutes	Less than 1 minute
+4	"What is a technical name for ""farsightedness""?"	Hyperopia	Astigmatism	Myopia	Presbyopia
+4	"The carat, a unit for measuring the mass of gemstones, is equal to how many milligrams?"	200 mg	100 mg	50 mg	500 mg
+4	Who is credited with the invention of the wireless telegraph (radio)?	Guglielmo Marconi	Alexander Graham Bell	Enrico Fermi	Robert N. Hall
+4	Who invented dynamite?	Alfred Nobel	Elisha Graves Otis	George Eastman	Robert H. Goddard
+4	What was Dr. Seuss' (1904-1991) real name?	Theodore Geisel	Dav Pilkey	Carol Otis Hurst	Steven Kellogg
