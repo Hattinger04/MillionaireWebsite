@@ -17,7 +17,6 @@ class Question(object):
     antwortmoeglichkeit = None
     antwort = None
 
-    # ctor + toString anscheinend in folien
     def __init__(self, fragetext, level, antwortmoeglichkeit, antwort):
         if not 0 <= level <= 4:
             print("Level konnte nicht ausgelesen werden!")
@@ -33,7 +32,7 @@ class Question(object):
 
 class Module(object):
 
-    def read_questions(self, fName):
+    def read_questions(fName):
         print("Auslesen der Dateien")
         questions = []
         file = open(fName, 'r')
@@ -47,7 +46,7 @@ class Module(object):
                 questions.append(end_question)
         return questions
 
-    def get_rand_question(self, level, questions):
+    def get_rand_question(level, questions):
         questions_level = []
         for i in questions:
             if i.level == level:
@@ -55,7 +54,7 @@ class Module(object):
                 questions_level.append(i)
         return random.choice(questions_level)
 
-    def check_answer(self, question, answer):
+    def check_answer(question, answer):
         if str(answer).startswith("exit"):
             exit()
         elif answer == str(question.antwort):
@@ -65,14 +64,8 @@ class Module(object):
             print("Wrong")
             return Status.Wrong
         return Status.Wrong
-
-    def main(self):
-        print("Datei suchen...")
-        questions = self.read_questions("millionaire.txt")
-        for i in questions:
-            print(i.__str__())
-        self.consoleOutput(questions)
-        
+    
+    # TODO:vor abgabe löschen! 
     def consoleOutput(self, questions):
         user_input = Status.Right
         player_level = -1

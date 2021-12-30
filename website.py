@@ -4,27 +4,46 @@ from model import Question, Module
 
 app = Flask(__name__)
 app.secret_key = '5#y2L"F4Q8zsa7Zb'
+questions = Module.read_questions("millionaire.txt")
+player_level = -1
 
 @app.route('/')
-def startseite():
+def startSite():
     return render_template('startseite.html', result = dict)
 
-@app.route('/game', methods = ['GET', 'POST'])
+@app.route('/game')
 @app.route('/game/<int:answer>', methods = ['GET', 'POST'])
-def game(answer=-1):
-    data = [
-        {
-            'frage': 'fragen über fragen...',
-            'antwort1': 'antowort1...',
-            'antwort2': 'antowort2...',
-            'antwort3': 'antowort3...',
-            'antwort4': 'antowort4...'
-        }
+def gameSite(answer=-1):
+    global player_level
+    player_level += 1
+    if(player_level != 0): 
+        pass
+        # get value and check if correct
+
+        # if correct next question
+
+        # else return false
+
+    else: 
+        # first Question: 
+        question = Module.get_rand_question(0, questions)
+
+        data = [
+            {
+                'frage': question.fragetext,
+                'level': question.level,
+                'antwort1': question.antwortmoeglichkeit[0],
+                'antwort2': question.antwortmoeglichkeit[1],
+                'antwort3': question.antwortmoeglichkeit[2],
+                'antwort4': question.antwortmoeglichkeit[3]
+            }
+           
     ]
     return render_template('game.html', data=data, result = dict)
+    
 
 @app.route('/questions')
-def questions():
+def questionsSite():
     return render_template('questions.html', result = dict) 
 
 
