@@ -27,6 +27,8 @@ def new_question(level):
 
 @app.route('/')
 def startSite():
+    global player_level
+    player_level = -1
     return render_template('startseite.html', result = dict)
 
 @app.route('/game')
@@ -35,22 +37,22 @@ def gameSite(answer=-1):
     global player_level
     player_level += 1
     if(player_level == 5): 
-        # return winner site
-        return render_template('game.html', data=new_question(player_level), result = dict)
+        return render_template('game.html', data="winning", result = dict)
     elif(player_level != 0): 
         if answer != right_answer:
-            # return to smth different or smth like that when not right answer
-            return render_template('game.html', data=new_question(player_level), result = dict)
+            # return to smth different when not right answer - right now "startseite"
+            player_level = -1
+            return render_template('startseite.html', result = dict)
         return render_template('game.html', data=new_question(player_level), result = dict)
     else: 
-       return render_template('game.html', data=new_question(player_level), result = dict)    
+        return render_template('game.html', data=new_question(player_level), result = dict)
 
 @app.route('/questions')
 def questionsSite():
     fragen = []
     for q in questions: 
         fragen.append({
-            "level": q.level, 
+            "level": q.level,
             "frage": q.fragetext
         })
     return render_template('questions.html', data=fragen, result = dict) 

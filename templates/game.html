@@ -1,12 +1,16 @@
 <h1>Game</h1>
 <form action = "" method = "post">
-    {% for item in data %}
-    <p>Frage: {{item.frage}}</p>
-    <p>Level: {{item.level}}</p>
-    <p><a class="btn btn−primary" href="/game/1" role="button">>Antwort1: {{item.antwort1}}</a></p>
-    <p><a class="btn btn−primary" href="/game/2" role="button">>Antwort2: {{item.antwort2}}</a></p>
-    <p><a class="btn btn−primary" href="/game/3" role="button">>Antwort3: {{item.antwort3}}</a></p>
-    <p><a class="btn btn−primary" href="/game/4" role="button">>Antwort4: {{item.antwort4}}</a></p>
-
-    {% endfor %}
+    {% if 'winning' in data %} 
+        <p>Du hast gewonnen!</p>
+        <p><a class="btn btn−primary" href="/" role="button">>Restart</a></p>
+    {% else %}
+        {% for item in data %}
+            <p>Frage: {{item.frage}}</p>
+            <p>Level: {{item.level}}</p>
+            <p><a class="btn btn−primary" href="/game/0" role="button">>Antwort1: {{item.antwort1}}</a></p>
+            <p><a class="btn btn−primary" href="/game/1" role="button">>Antwort2: {{item.antwort2}}</a></p>
+            <p><a class="btn btn−primary" href="/game/2" role="button">>Antwort3: {{item.antwort3}}</a></p>
+            <p><a class="btn btn−primary" href="/game/3" role="button">>Antwort4: {{item.antwort4}}</a></p>
+        {% endfor %}
+    {% endif %}
  </form>    
