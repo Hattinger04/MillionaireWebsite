@@ -19,7 +19,6 @@ class Question(object):
 
 class Module(object):
     def read_questions(fName):
-        print("Auslesen der Dateien")
         questions = []
         file = open(fName, 'r')
         for line in file:

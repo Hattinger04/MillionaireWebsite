@@ -1,6 +1,6 @@
 from flask import Flask
 from flask.templating import render_template
-from model import Question, Module
+from model import Module
 
 app = Flask(__name__)
 app.secret_key = '5#y2L"F4Q8zsa7Zb'
@@ -32,7 +32,7 @@ def startSite():
     return render_template('startseite.html', result = dict)
 
 @app.route('/game')
-@app.route('/game/<int:answer>', methods = ['GET', 'POST'])
+@app.route('/game/<int:answer>')
 def gameSite(answer=-1):
     global player_level
     player_level += 1
@@ -40,8 +40,6 @@ def gameSite(answer=-1):
         return render_template('game.html', data="winning", result = dict)
     elif(player_level != 0): 
         if answer != right_answer:
-            # return to smth different when not right answer - right now "startseite"
-            player_level = -1
             return render_template('startseite.html', result = dict)
         return render_template('game.html', data=new_question(player_level), result = dict)
     else: 
@@ -49,13 +47,13 @@ def gameSite(answer=-1):
 
 @app.route('/questions')
 def questionsSite():
-    fragen = []
+    data = []
     for q in questions: 
-        fragen.append({
+        data.append({
             "level": q.level,
             "frage": q.fragetext
         })
-    return render_template('questions.html', data=fragen, result = dict) 
+    return render_template('questions.html', data=data, result = dict) 
 
 
 
