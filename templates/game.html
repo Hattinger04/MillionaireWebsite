@@ -2,12 +2,10 @@
     {% for item in data %}
     <p>Frage: {{item.frage}}</p>
     <p>Level: {{item.level}}</p>
-    <p>Antwort1: {{item.antwort1}}</p>
-    <p>Antwort2: {{item.antwort2}}</p>
-    <p>Antwort3: {{item.antwort3}}</p>
-    <p>Antwort4: {{item.antwort4}}</p>
+    <p><a class="btn btn−primary" href="/game/1" role="button">>Antwort1: {{item.antwort1}}</a></p>
+    <p><a class="btn btn−primary" href="/game/2" role="button">>Antwort2: {{item.antwort2}}</a></p>
+    <p><a class="btn btn−primary" href="/game/3" role="button">>Antwort3: {{item.antwort3}}</a></p>
+    <p><a class="btn btn−primary" href="/game/4" role="button">>Antwort4: {{item.antwort4}}</a></p>
 
     {% endfor %}
-
-    <a class="btn btn−primary" href="/game" role="button">Submit</a>
  </form>    
