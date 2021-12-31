@@ -1,15 +1,4 @@
 import random
-from enum import Enum
-from tkinter import *
-
-
-
-class Status(Enum):
-    Right = 0,
-    Wrong = 1,
-    WrongInput = 2,
-    Exit = 3
-
 
 class Question(object):
     fragetext = None
@@ -50,37 +39,10 @@ class Module(object):
         questions_level = []
         for i in questions:
             if i.level == level:
-                question = i
                 questions_level.append(i)
         return random.choice(questions_level)
 
-    def check_answer(question, answer):
-        if str(answer).startswith("exit"):
-            exit()
-        elif answer == str(question.antwort):
-            print("Right")
-            return Status.Right
-        elif str(answer).isnumeric():
-            print("Wrong")
-            return Status.Wrong
-        return Status.Wrong
-    
-    # TODO:vor abgabe löschen! 
-    def consoleOutput(self, questions):
-        user_input = Status.Right
-        player_level = -1
-        while user_input != Status.Wrong:
-            player_level += 1
-            if player_level == 5:
-                print("Du hast gewonnnen :D ")
-                return
-            print("-------------------------------")
-            print("Your current level is %s" % str(player_level))
-            question = self.get_rand_question(player_level, questions)
-            print(question.fragetext)
-            for i in question.antwortmoeglichkeit:
-                print(i + " (" + str(question.antwortmoeglichkeit.index(i)) + ")")
-            user_input = self.check_answer(question, input("Your answer: "))
+   
 
 
 
