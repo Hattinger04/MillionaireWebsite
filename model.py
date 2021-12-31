@@ -8,8 +8,7 @@ class Question(object):
 
     def __init__(self, fragetext, level, antwortmoeglichkeit, antwort):
         if not 0 <= level <= 4:
-            print("Level konnte nicht ausgelesen werden!")
-            return
+            raise ValueError("Level has no good value.")
         self.level = level
         self.fragetext = fragetext
         self.antwortmoeglichkeit = antwortmoeglichkeit
@@ -18,9 +17,7 @@ class Question(object):
     def __str__(self):
         return str(self.level) + " " + self.fragetext + " " + self.antwortmoeglichkeit.__str__() + " " + str(self.antwort)
 
-
 class Module(object):
-
     def read_questions(fName):
         print("Auslesen der Dateien")
         questions = []
