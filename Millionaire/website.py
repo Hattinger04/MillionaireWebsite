@@ -65,7 +65,10 @@ def getAll(self):
 
 class Service(Resource):
     def get(self, id):
-        return module.getQuestionById(id).serialize()
+        question = module.getQuestionById(id)
+        if question == None:
+            return {"Message": "Frage mit der ID %s exisitiert nicht!" % id}
+        return question.serialize()
     def put(self, id):
         question = Question(id,request.form["fragetext"], int(request.form["level"]),request.form["antwortmoeglichkeit"],request.form["antwort"])
         status = module.addQuestion(question)

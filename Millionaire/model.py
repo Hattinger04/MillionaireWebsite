@@ -45,7 +45,6 @@ class Module(object):
                 end_question = Question(ID, question[1], int(question[0]), answers, answers.index(question[2]))
                 ID = ID + 1
                 questions.append(end_question)
-                print(end_question)
         self.questions = questions
         return questions
 
