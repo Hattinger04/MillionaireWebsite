@@ -1,14 +1,16 @@
-from flask import Flask, session
+from flask import Flask, session, request
 from flask.templating import render_template
 from flask_restful import Resource, Api
-from model import Module
+from model import Module, Question
 
 app = Flask(__name__)
 app.secret_key = '5#y2L"F4Q8zsa7Zb'
-questions = Module.read_questions('millionaire.txt')
+module = Module()
+questions = module.read_questions("millionaire.txt")
+api = Api(app)
 
 def new_question(level):
-    question = Module.get_rand_question(level, questions)
+    question = module.get_rand_question(level, questions)
     session["answer"] = question.antwort
     data = [
         {
@@ -27,48 +29,63 @@ def new_question(level):
 def startSite():
     session["level"] = -1
     session["answer"] = -1
-    return render_template('templates/startseite.html', result = dict)
+    return render_template('startseite.html', result = dict)
 
 @app.route('/game')
 @app.route('/game/<int:answer>')
 def gameSite(answer=-1):
     session["level"] += 1
     if(session["level"] == 5):
-        return render_template('templates/game.html', data="winning", result = dict)
+        return render_template('game.html', data="winning", result = dict)
     elif(session["level"] != 0):
         if answer != session["answer"]:
-            return render_template('templates/startseite.html', result = dict)
-        return render_template('templates/game.html', data=new_question(session["level"]), result = dict)
+            return render_template('startseite.html', result = dict)
+        return render_template('game.html', data=new_question(session["level"]), result = dict)
     else:
-        return render_template('templates/game.html', data=new_question(session["level"]), result = dict)
+        return render_template('game.html', data=new_question(session["level"]), result = dict)
 
 @app.route('/questions')
 def questionsSite():
     data = []
     for q in questions:
         data.append({
-            "level": session["level"],
-            "frage": session["question"]
+            "ID": q.ID,
+            "level": q.level,
+            "frage": q.fragetext
         })
-    return render_template('templates/questions.html', data=data, result = dict)
+    return render_template('questions.html', data=data, result = dict)
 
+# nachfragen wohin?
+def getAll(self):
+    questions = module.getAllQuestions()
+    message = []
+    for question in questions:
+        message.append(question.serialize())
+    return {"Message" : message}
 
 class Service(Resource):
     def get(self, id):
-        return Module.getQuestionById(id)
-    def put(self, question):
-        status = Module.addQuestion(question)
+        return module.getQuestionById(id).serialize()
+    def put(self, id):
+        question = Question(id,request.form["fragetext"], int(request.form["level"]),request.form["antwortmoeglichkeit"],request.form["antwort"])
+        status = module.addQuestion(question)
         if status:
             return {"Message": "Neu hinzugefügt"}
         return {"Message": "Überschrieben"}
     def delete(self, id):
-        Module.deleteQuestion(id)
-        return {"Message": "Frage mit der ID %s gelöscht" % id}
+        status = module.deleteQuestion(id)
+        if status:
+            return {"Message": "Frage mit der ID %s gelöscht" % id}
+        return {"Message": "Frage mit der ID %s exisitiert nicht!" % id}
     def patch(self, id):
-        Module.changeQuestion(id)
-        return {"Message": "Frage mit der ID %s gepatched" % id}
-    def getAll(self):
-        return Module.getAllQuestions()
+        question = Question(id, request.form["fragetext"], int(request.form["level"]), request.form["antwortmoeglichkeit"], request.form["antwort"])
+        status = module.changeQuestion(id, question)
+        if status:
+            return {"Message": "Frage mit der ID %s gepatched" % id}
+        return {"Message": "Frage mit der ID %s exisitiert nicht!" % id}
+
+
+api.add_resource(Service, "/service/<int:id>")
 
 if __name__ == '__main__':
     app.run(debug=True)

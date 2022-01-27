@@ -18,13 +18,15 @@
 
 <thead>
     <tr>
+        <th>ID</th>
         <th>Level</th>
         <th>Frage</th>
     </tr>
 </thead>
 <tbody>
 {% for q in data %}
-    <tr> 
+    <tr>
+        <td> {{q.ID}}</td>
         <td> {{q.level}}</td>
         <td> {{q.frage}}</td>
     </tr>

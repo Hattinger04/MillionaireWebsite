@@ -2,31 +2,28 @@ import random
 import os
 import sys
 
-from flask_restful import Resource
-
-
 class Question(object):
-    id = None
+    ID = None
     fragetext = None
     level = None
     antwortmoeglichkeit = None
     antwort = None
 
-    def __init__(self, id, fragetext, level, antwortmoeglichkeit, antwort):
+    def __init__(self, ID, fragetext, level, antwortmoeglichkeit, antwort):
         if not 0 <= level <= 4:
             raise ValueError("Level has no good value.")
-        self.id = id
+        self.ID = ID
         self.level = level
         self.fragetext = fragetext
         self.antwortmoeglichkeit = antwortmoeglichkeit
         self.antwort = antwort
 
     def __str__(self):
-        return str(id) + " " + str(self.level) + " " + self.fragetext + " " + self.antwortmoeglichkeit.__str__() + " " + str(self.antwort)
+        return str(self.ID) + " " + str(self.level) + " " + self.fragetext + " " + self.antwortmoeglichkeit.__str__() + " " + str(self.antwort)
 
     def serialize(self):
         return {
-            "id": self.id,
+            "ID": self.ID,
             "level": self.level,
             "fragetext": self.fragetext,
             "antwortmoeglichkeit": self.antwortmoeglichkeit,
@@ -34,8 +31,9 @@ class Question(object):
         }
 
 class Module(object):
-    def read_questions(fName):
-        id = 0
+    questions = None
+    def read_questions(self, fName):
+        ID = 0
         questions = []
         file = open(os.path.join(sys.path[0], fName), 'r')
         for line in file:
@@ -44,9 +42,11 @@ class Module(object):
                 question = line.split("\t")
                 answers = [question[2], question[3], question[4], question[5]]
                 random.shuffle(answers)
-                end_question = Question(id, question[1], int(question[0]), answers, answers.index(question[2]))
-                id = id + 1
+                end_question = Question(ID, question[1], int(question[0]), answers, answers.index(question[2]))
+                ID = ID + 1
                 questions.append(end_question)
+                print(end_question)
+        self.questions = questions
         return questions
 
     def get_rand_question(level, questions):
@@ -57,16 +57,29 @@ class Module(object):
         return random.choice(questions_level)
 
     def getAllQuestions(self):
-        pass
-
-    def getQuestionById(self, id):
-        pass
+        return self.questions
+    def getQuestionById(self, ID):
+        try:
+            if(self.questions[ID] in self.questions):
+                return self.questions[ID]
+        except(IndexError):
+            return None
     def addQuestion(self, question):
-        pass
-    def deleteQuestion(self, id):
-        pass
-    def changeQuestion(self, id, Question):
-        pass
+        if(question in self.questions):
+            return False
+        self.questions.append(question)
+        return True
+    def deleteQuestion(self, ID):
+        question = self.getQuestionById(ID)
+        if (question not in self.questions):
+            return False
+        self.questions.remove(question)
+        return True
+    def changeQuestion(self, ID, question):
+        if (self.questions[ID] not in self.questions):
+            return False
+        self.questions[ID] = question
+        return True
 
 
 
