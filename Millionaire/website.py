@@ -82,7 +82,7 @@ class Service(Resource):
         status = module.changeQuestion(id, question)
         if status:
             return {"Message": "Frage mit der ID %s gepatched" % id}
-        return {"Message": "Frage mit der ID %s exisitiert nicht!" % id}
+        return {"Message": "Frage mit der ID %s wurde neu erstellt" % id}
 
 
 api.add_resource(Service, "/service/<int:id>")

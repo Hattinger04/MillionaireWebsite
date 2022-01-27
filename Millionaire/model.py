@@ -49,7 +49,7 @@ class Module(object):
         self.questions = questions
         return questions
 
-    def get_rand_question(level, questions):
+    def get_rand_question(self, level, questions):
         questions_level = []
         for i in questions:
             if i.level == level:
@@ -58,25 +58,32 @@ class Module(object):
 
     def getAllQuestions(self):
         return self.questions
+
     def getQuestionById(self, ID):
         try:
             if(self.questions[ID] in self.questions):
                 return self.questions[ID]
+            return None
         except(IndexError):
             return None
+
     def addQuestion(self, question):
         if(question in self.questions):
             return False
         self.questions.append(question)
         return True
+
     def deleteQuestion(self, ID):
         question = self.getQuestionById(ID)
         if (question not in self.questions):
             return False
         self.questions.remove(question)
         return True
+
     def changeQuestion(self, ID, question):
-        if (self.questions[ID] not in self.questions):
+        questionBefore = self.getQuestionById(ID)
+        if (questionBefore == None):
+            self.questions.append(question)
             return False
         self.questions[ID] = question
         return True

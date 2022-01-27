@@ -28,3 +28,11 @@ response = requests.patch("%s/%s" % (host, "1"), data={
     "antwort": "3"
 }).json()
 print(response)
+
+response = requests.patch("%s/%s" % (host, "10000"), data={
+    "level": 3,
+    "fragetext": "Is this a good question?",
+    "antwortmoeglichkeit": ["Yes", "Maybe", "No", "Perfect game"],
+    "antwort": "2"
+}).json()
+print(response)
