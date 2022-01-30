@@ -7,7 +7,11 @@ url2 = "http://api.openweathermap.org/data/2.5/forecast?q=Innsbruck&appid=%s" % 
 
 if __name__ == '__main__':
     response = requests.get(url).json()
-    print(json.dumps(response, indent=4, sort_keys=False))
+    # print(json.dumps(response, indent=4, sort_keys=False))
+
+    # example of searching
+    filter = response["list"][10]["components"]["co"]
+    print(filter)
 
     response = requests.get(url2).json()
-    print(json.dumps(response, indent=4, sort_keys=False))
+    # print(json.dumps(response, indent=4, sort_keys=False))
