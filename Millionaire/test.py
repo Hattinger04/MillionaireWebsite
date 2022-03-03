@@ -9,14 +9,14 @@ print(response)
 response = requests.get("%s/%s" % (host, "10000")).json()
 print(response)
 
-response = requests.delete("%s/%s" % (host, "0")).json()
+response = requests.delete("%s/%s" % (host, "3")).json()
 print(response)
 
 # Does not exist in List - testing for error message
 response = requests.delete("%s/%s" % (host, "1000000")).json()
 print(response)
 
-response = requests.put("%s/%s" % (host, "5000"), data={
+response = requests.put("%s/%s" % (host, "1"), data={
     "level": 2,
     "fragetext": "Is this a good test?",
     "antwortmoeglichkeit": ["Yes", "Maybe", "No", "Perfect game"],
@@ -25,7 +25,7 @@ response = requests.put("%s/%s" % (host, "5000"), data={
 print(response)
 
 
-response = requests.patch("%s/%s" % (host, "1"), data={
+response = requests.patch("%s/%s" % (host, "4"), data={
     "level": 1,
     "fragetext": "How are you?",
     "antwortmoeglichkeit": ["Yes", "Maybe", "No", "Perfect game"],

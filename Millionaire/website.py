@@ -70,18 +70,20 @@ class Service(Resource):
             return {"Message": "Frage mit der ID %s exisitiert nicht!" % id}
         return question.serialize()
     def put(self, id):
-        question = Question(id,request.form["fragetext"], int(request.form["level"]),request.form["antwortmoeglichkeit"],request.form["antwort"])
+        antwortmoeglichkeiten = request.form.getlist("antwortmoeglichkeit")
+        question = Question(id,request.form["fragetext"], int(request.form["level"]),antwortmoeglichkeit=antwortmoeglichkeiten, antwort=request.form["antwort"])
         status = module.addQuestion(question)
         if status:
             return {"Message": "Neu hinzugefügt"}
         return {"Message": "Überschrieben"}
     def delete(self, id):
-        status = module.deleteQuestion(id)
+        status = module.deleteQuestion(int(id))
         if status:
             return {"Message": "Frage mit der ID %s gelöscht" % id}
         return {"Message": "Frage mit der ID %s exisitiert nicht!" % id}
     def patch(self, id):
-        question = Question(id, request.form["fragetext"], int(request.form["level"]), request.form["antwortmoeglichkeit"], request.form["antwort"])
+        antwortmoeglichkeiten = request.form.getlist("antwortmoeglichkeit")
+        question = Question(id, request.form["fragetext"], int(request.form["level"]),antwortmoeglichkeit=antwortmoeglichkeiten, antwort=request.form["antwort"])
         status = module.changeQuestion(id, question)
         if status:
             return {"Message": "Frage mit der ID %s gepatched" % id}
