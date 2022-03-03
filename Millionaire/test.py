@@ -2,14 +2,14 @@ import requests
 
 host = "http://localhost:5000/service"
 
-response = requests.get("%s/%s" % (host, "0")).json()
+response = requests.get("%s/%s" % (host, "4")).json()
 print(response)
 
 # Does not exist in List - testing for error message
 response = requests.get("%s/%s" % (host, "10000")).json()
 print(response)
 
-response = requests.delete("%s/%s" % (host, "3")).json()
+response = requests.delete("%s/%s" % (host, "5")).json()
 print(response)
 
 # Does not exist in List - testing for error message

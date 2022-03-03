@@ -6,11 +6,11 @@ from model import Module, Question
 app = Flask(__name__)
 app.secret_key = '5#y2L"F4Q8zsa7Zb'
 module = Module()
-questions = module.read_questions("millionaire.txt")
+#questions = module.read_questionsFile("millionaire.txt")
 api = Api(app)
 
 def new_question(level):
-    question = module.get_rand_question(level, questions)
+    question = module.get_rand_question(level, module.questions)
     session["answer"] = question.antwort
     data = [
         {
@@ -47,7 +47,7 @@ def gameSite(answer=-1):
 @app.route('/questions')
 def questionsSite():
     data = []
-    for q in questions:
+    for q in module.getAllQuestions():
         data.append({
             "ID": q.ID,
             "level": q.level,

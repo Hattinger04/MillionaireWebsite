@@ -5,13 +5,15 @@ from sqlalchemy import Column, Integer, Text, Float, DateTime, create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.sql.expression import func
+import deprecation
 
 Base = declarative_base()
 metadata = Base.metadata
 engine = create_engine(
     r'sqlite:///C:\Users\s8gre\Documents\Schule\4BHWII\CC\MillionaireWebsite\millionaire.sqlite3')  # Welche Datenbank wird verwendet
-db_session = scoped_session(sessionmaker(autocommit=False, autoflush=True, bind=engine))
+db_session = scoped_session(sessionmaker(autocommit=True, autoflush=True, bind=engine))
 Base.query = db_session.query_property()
+
 
 class Millionaire(Base):
     __tablename__ = 'millionaire'
@@ -34,6 +36,7 @@ class Millionaire(Base):
             "antwort": 0
         }
 
+
 class Question(object):
     ID = None
     fragetext = None
@@ -51,7 +54,8 @@ class Question(object):
         self.antwort = antwort
 
     def __str__(self):
-        return str(self.ID) + " " + str(self.level) + " " + self.fragetext + " " + self.antwortmoeglichkeit.__str__() + " " + str(self.antwort)
+        return str(self.ID) + " " + str(
+            self.level) + " " + self.fragetext + " " + self.antwortmoeglichkeit.__str__() + " " + str(self.antwort)
 
     def serialize(self):
         return {
@@ -62,12 +66,13 @@ class Question(object):
             "antwort": self.antwort
         }
 
+
 class Module(object):
     wrongQuestions = []
     questions = None
 
-    # no db included yet
-    def read_questions(self, fName):
+    @deprecation.deprecated(details="Old method - now using db")
+    def read_questionsFile(self, fName):
         ID = 0
         questions = []
         file = open(os.path.join(sys.path[0], fName), 'r')
@@ -94,50 +99,48 @@ class Module(object):
         return self.questions
 
     def getQuestionById(self, ID):
-        try:
-            for question in self.questions:
-                if question.ID == ID:
-                    return question
-            return None
-        except(IndexError):
-            return None
+        return Millionaire.query.get(ID)
 
     def addQuestion(self, question):
-        info = Millionaire.query.filter_by(id=question.ID)
-        if info is not None:
+        info = self.getQuestionById(question.ID)
+        if info:
             return False
         self.setWrongQuestion(question.antwort)
-
-        questionDB = Millionaire(id=question.ID, difficulty=question.level, question=question.fragetext, \
-                                   correct_answer=question.antwortmoeglichkeit[int(question.antwort)], answer2=question.antwortmoeglichkeit[self.wrongQuestions[0]], \
-                                   answer3=question.antwortmoeglichkeit[self.wrongQuestions[1]], answer4=question.antwortmoeglichkeit[self.wrongQuestions[2]], background_information ="")
-        session = db_session.session_factory()
-        session.begin()
-        session.add(questionDB)
-        session.commit()
-        session.flush()
-        session.close()
+        info = Millionaire(id=question.ID, difficulty=question.level, question=question.fragetext, \
+                           correct_answer=question.antwortmoeglichkeit[int(question.antwort)],
+                           answer2=question.antwortmoeglichkeit[self.wrongQuestions[0]], \
+                           answer3=question.antwortmoeglichkeit[self.wrongQuestions[1]], \
+                           answer4=question.antwortmoeglichkeit[self.wrongQuestions[2]])
+        db_session.add(info)
+        db_session.flush()
         return True
 
     def deleteQuestion(self, ID):
-        info = Millionaire.query.filter_by(id=ID)
-        if info is None:
+        info = self.getQuestionById(ID)
+        if not info:
             return False
-        Millionaire.query.filter_by(id=ID).delete()
-        db_session.commit()
+        db_session.delete(info)
         db_session.flush()
         return True
 
     def changeQuestion(self, ID, question):
-        info = Millionaire.query.filter(Millionaire.id == 1)
-        if info is None:
+        info = self.getQuestionById(ID)
+        if not info:
             self.addQuestion(question)
             return False
         self.setWrongQuestion(question.antwort)
-        Millionaire.query.filter(Millionaire.id == 1).update(dict(id=question.ID, difficulty=question.level, question=question.fragetext, \
-                                   correct_answer=question.antwortmoeglichkeit[int(question.antwort)], answer2=question.antwortmoeglichkeit[self.wrongQuestions[0]], \
-                                   answer3=question.antwortmoeglichkeit[self.wrongQuestions[1]], answer4=question.antwortmoeglichkeit[self.wrongQuestions[2]], background_information =""))
-        db_session.commit()
+        questionDB = Millionaire(id=question.ID, difficulty=question.level, question=question.fragetext, \
+                                 correct_answer=question.antwortmoeglichkeit[int(question.antwort)],
+                                 answer2=question.antwortmoeglichkeit[self.wrongQuestions[0]], \
+                                 answer3=question.antwortmoeglichkeit[self.wrongQuestions[1]], \
+                                 answer4=question.antwortmoeglichkeit[self.wrongQuestions[2]])
+        info.difficulty = questionDB.difficulty
+        info.question = questionDB.question
+        info.correct_answer = questionDB.correct_answer
+        info.answer2 = questionDB.answer2
+        info.answer3 = questionDB.answer3
+        info.answer4 = questionDB.answer4
+        db_session.add(info)
         db_session.flush()
         return True
 
@@ -146,4 +149,3 @@ class Module(object):
         for i in range(4):
             if i != int(rightQuestion):
                 self.wrongQuestions.append(i)
-
