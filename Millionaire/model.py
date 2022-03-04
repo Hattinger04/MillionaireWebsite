@@ -69,7 +69,7 @@ class Question(object):
 
 class Module(object):
     wrongQuestions = []
-    questions = None
+    questions = []
 
     @deprecation.deprecated(details="Old method - now using db")
     def read_questionsFile(self, fName):
@@ -87,6 +87,13 @@ class Module(object):
                 questions.append(end_question)
         self.questions = questions
         return questions
+
+    def read_db(self):
+        questionsDB = Millionaire.query.all()
+        for question in questionsDB:
+            answers = [question.correct_answer, question.answer2,question.answer3, question.answer4]
+            random.shuffle(answers)
+            self.questions.append(Question(question.id, question.question, question.difficulty, answers, answers.index(question.correct_answer)))
 
     def get_rand_question(self, level, questions):
         questions_level = []

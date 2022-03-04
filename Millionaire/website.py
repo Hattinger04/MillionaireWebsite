@@ -1,3 +1,4 @@
+import flask
 from flask import Flask, session, request
 from flask.templating import render_template
 from flask_restful import Resource, Api
@@ -7,6 +8,7 @@ app = Flask(__name__)
 app.secret_key = '5#y2L"F4Q8zsa7Zb'
 module = Module()
 #questions = module.read_questionsFile("millionaire.txt")
+module.read_db()
 api = Api(app)
 
 def new_question(level):
@@ -39,7 +41,7 @@ def gameSite(answer=-1):
         return render_template('game.html', data="winning", result = dict)
     elif(session["level"] != 0):
         if answer != session["answer"]:
-            return render_template('startseite.html', result = dict)
+            return flask.redirect("/")
         return render_template('game.html', data=new_question(session["level"]), result = dict)
     else:
         return render_template('game.html', data=new_question(session["level"]), result = dict)
@@ -55,7 +57,6 @@ def questionsSite():
         })
     return render_template('questions.html', data=data, result = dict)
 
-# nachfragen wohin?
 def getAll(self):
     questions = module.getAllQuestions()
     message = []
